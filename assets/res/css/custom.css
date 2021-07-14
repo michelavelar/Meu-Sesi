@@ -42,13 +42,18 @@ section {
   text-transform: uppercase;
 }
 
-#menu-portal .navbar-nav {
-  text-align: center;
+#menu-portal .user {
+  font-size: 11.5px;
 }
 
+#menu-portal .nav-item:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
 #menu-portal .nav-item {
  margin: .3rem 0 ;
  margin-left: .6rem;
+ padding-left: 0;
 }
 
 #menu-portal #educacao.nav-item,
@@ -56,8 +61,8 @@ section {
 #menu-portal #esporte.nav-item,
 #menu-portal #mercado.nav-item,
 #menu-portal #corporativo.nav-item {
-border-left-width: 4px;
-border-left-style: solid;
+  border-left-width: 4px;
+  border-left-style: solid;
 }
 
 #menu-portal #educacao.nav-item {
@@ -101,7 +106,7 @@ border-left-style: solid;
 }
 
 #menu-portal .nav-link {
-  padding: .2rem 1rem;
+  padding: .2rem 0 .2rem .5rem;
 }
 
 
@@ -119,8 +124,10 @@ border-left-style: solid;
 }
 
 #menu-portal .dropdown-item.active,
-#menu-portal .dropdown-item:active {
-  background-color: #cc0000;
+#menu-portal .dropdown-item:active,
+.dropdown-item.active, 
+.dropdown-item:active {
+  background-color: #cc0000 !important;
 }
 
 #menu-portal .dropdown-item.active .fa,
@@ -137,228 +144,161 @@ border-left-style: solid;
   border-top: 1px solid #ccc; 
 }
 
+#menu-portal .navbar-toggler {
+  padding: .1rem .5rem;
+  font-size: 1rem;
+}
 #menu-portal .navbar-toggler-icon {
   border: red
 }
 
 
 
-/*AQUI O ID PRECISA SER ALTERADO CONFORME O NOME DO SERVICO CADASTRADO */
-/*#app-conecta-sesi .box:hover {
-  color: #FFFFFF;
+
+.box {
+  width: 100%;
+  min-height: 160px;
+  margin-bottom: 1.5rem;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+  text-transform: uppercase; 
+  border-radius: 20px;
+  background: #efefef;
+  transition: all 0.15s ease ;
+}
+
+.box a { color: inherit;text-decoration: none !important }
+
+/*SE NAO FOR SETADO NENHUM ID PARA O BOX, O HOVER SERÁ O PADRAO ABAIXO*/
+.box:hover {
+  color: #FFFFFF !important;
   background: #cc0000;
-  }*/
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
+  transition: all 0.15s ease ;
+}
 
-/*#app-conexao-digital .box:hover {
-  color: #FFFFFF;
-  background: #8E558E;
-  }*/
+.box .svg {
+  filter: invert(0)   brightness(1.25);
+}
 
-/*#app-office .box:hover {
-  color: #FFFFFF;
-  background: #e73e11;
-  }*/
+.box:hover .svg {
+  filter: invert(1)   brightness(2);
+}
 
-/*#app-teams .box:hover {
-  color: #FFFFFF;
-  background: #5458a3;
-  }*/
+.box:hover .taksbar .open-new-tab {
+  display: inline-block;
+}
 
-/*#app-ebiblioteca .box:hover {
-  color: #FFFFFF;
-  background: #f49819;
-  }*/
+.taksbar {
+  display: inline-block;
+  font-size: 9px;
+  width: 100%; 
+  z-index: 9999;
+}
 
-/*#app-geekie .box:hover {
-  color: #FFFFFF;
-  background: #DE1D37;
-  }*/
+.taksbar #open-new-tab,
+.taksbar .pin {
+  cursor: pointer;
+}
 
-/*#app-dragonlearn .box:hover {
-  color: #FFFFFF;
-  background: #ff6666;
-  }*/
+.taksbar #open-new-tab .alt,
+.taksbar .pin .alt{
+  display: none;
+  transition: all 0.15s ease ;
+  cursor: pointer;
+}
 
-/*#app-coderz .box:hover {
-  color: #FFFFFF;
-  background: #122e4a;
-  }*/
+.taksbar #open-new-tab:hover .alt,
+.taksbar .pin:hover .alt {
+  display: inline-block;
+  transition: all 0.15s ease ;
+}
 
-/*#app-portal-sesi-educacao .box:hover{
-  color: #FFFFFF;
-  background: #0068b3
-  }*/
+.taksbar .pin i.fa{
+  transform: rotate(90deg);
+  transition: transform 0.1s ease ; 
+}
 
-/*#app-portal-sap-hcm .box:hover{
-  color: #FFFFFF;
-  background: #1fb2f0;
-  }*/
+.taksbar .pin i.fa:hover {
+  transform: rotate(45deg);
+}
 
-/*#app-eja .box:hover{
-  color: #FFFFFF;
-  background: #59b0ae;
-  }*/
+.logo-servico {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  min-height: 5rem; 
+  max-height: 5rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-/*#app-ambiente-virtual-eja .box:hover{
-  color: #FFFFFF;
-  background: #e2c663;
-  }*/
+.logo-servico img {
+  max-height: inherit;
+}
 
-/*#app-alfabetizacao .box:hover{
-  color: #FFFFFF;
-  background: #9f7c93;
-  }*/
+.titulo-servico {
+  display: flex;
+  max-width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 2.4rem; 
+}
 
-/*#app-faculdade-sesi .box:hover{
-  color: #FFFFFF;
-  background: #cc0000;
-  }*/
+#main, #pinned {
+  display: contents
+}
 
-/*#app-universidade-corporativa .box:hover{
-  color: #FFFFFF;
-  background: #5e0a0a;
-  }*/
+#pinned .taksbar .pin i.fa {
+  color: #cc0000;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
 
+#pinned .box:hover .taksbar .pin i.fa { 
+  color: #FFFFFF !important;
+}
 
-  /*FIM ID PERSONALIZADO*/
-
-  .box {
-    width: 100%;
-    min-height: 160px;
-    margin-bottom: 1.5rem;
-    padding: 6px 12px;
-    font-size: 16px;
-    line-height: 16px;
-    color: #666666;
-    text-transform: uppercase; 
-    border-radius: 20px;
-    background: #efefef;
-    transition: all 0.15s ease ;
-  }
-
-  .box a { color: inherit;text-decoration: none !important }
-
-  /*SE NAO FOR SETADO NENHUM ID PARA O BOX, O HOVER SERÁ O PADRAO ABAIXO*/
-  .box:hover {
-    color: #FFFFFF !important;
-    background: #cc0000;
-    -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-    transition: all 0.15s ease ;
-  }
-
-  .box .svg {
-    filter: invert(0)   brightness(1.25);
-  }
-
-  .box:hover .svg {
-    filter: invert(1)   brightness(2);
-  }
-
-  .box:hover .taksbar .open-new-tab {
-    display: inline-block;
-  }
-
-  .taksbar {
-    display: inline-block;
-    font-size: 9px;
-    width: 100%; 
-    z-index: 9999;
-  }
-
-  .taksbar #open-new-tab,
-  .taksbar .pin {
-    cursor: pointer;
-  }
-
-  .taksbar #open-new-tab .alt,
-  .taksbar .pin .alt{
-    display: none;
-    transition: all 0.15s ease ;
-    cursor: pointer;
-  }
-
-  .taksbar #open-new-tab:hover .alt,
-  .taksbar .pin:hover .alt {
-    display: inline-block;
-    transition: all 0.15s ease ;
-  }
-
-  .taksbar .pin i.fa{
-    transform: rotate(90deg);
-    transition: transform 0.1s ease ; 
-  }
-
-  .taksbar .pin i.fa:hover {
-    transform: rotate(45deg);
-  }
-
-  .logo-servico {
-    display: flex;
-    width: 80%;
-    height: 100%;
-    min-height: 5rem; 
-    max-height: 5rem;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .logo-servico img {
-    max-height: inherit;
-  }
-
-  .titulo-servico {
-    display: flex;
-    max-width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 2.4rem; 
-  }
-
-  #main, #pinned {
-    display: contents
-  }
-
-  #pinned .taksbar .pin i.fa {
-    color: #cc0000;
-    transform: rotate(45deg);
-    cursor: pointer;
-  }
-
-  #pinned .box:hover .taksbar .pin i.fa { 
-    color: #FFFFFF !important;
-  }
-
-  #portal-educa .carousel-item .img-carousel {
-    min-height: 185px; 
-    background-size: cover !important; 
-    background-position: center !important;
-  }
+#portal-educa .carousel-item .img-carousel {
+  min-height: 200px; 
+  background-size: cover !important; 
+  background-position: center !important;
+}
 
 
-  /*LATERAL*/
+/*LATERAL*/
 
-  #portal-educa .carousel {
-    width: 95%;
-    margin: 0 auto 2rem;
-  }
+#portal-educa .carousel {
+  width: 95%;
+  margin: 0 auto 2rem;
+}
 
-  #yammer {
+#yammer {
 
-    border: 1px solid #ccc;
-  }
+  border: 1px solid #ccc;
+}
 
 
-  /*AVISOS*/
-  .thead-red {
-    color: #ffffff;
-    background-color: #cc0000;
-  }
+/*AVISOS*/
+table thead {
+  font-family: Gotham;
+  text-transform: uppercase; 
+}
+table th {
+  font-weight: 600;
+}
+.thead-red {
+  color: #ffffff;
+  background-color: #cc0000;
+}
 
 
 
@@ -387,6 +327,10 @@ border-left-style: solid;
 @media (min-width: 767px){
   #menu-portal {
     font-size: 11px;
+  }
+
+  #menu-portal .user {
+    font-size: inherit;
   }
 
   #menu-portal .navbar-collapse {
