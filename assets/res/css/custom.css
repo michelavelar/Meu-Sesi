@@ -301,7 +301,213 @@ table th {
 }
 
 
+/**** FOOTER ****/
+.hidden-span {
+  display: none;
+}
 
+footer {
+  color: #ffffff;
+}
+
+footer section {
+  margin: 0;
+}
+
+footer .faixa-links {
+  list-style: none;
+  padding-left: 0;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #707070;
+  background-color: #f0f0f0;
+  text-transform: uppercase;
+}
+
+footer .faixa-links ul {
+  margin: 9px auto;
+}
+
+footer .faixa-links li {
+  display: inline-block;
+}
+
+footer .faixa-links li {
+  display: inline-block;
+}
+
+footer .faixa-links li {
+  padding: 0 20px 0 0;
+}
+
+footer .faixa-links li a {
+  color: #707070;
+}
+
+footer .faixa-links li:last-child {
+  padding: 0;
+}
+
+footer .faixa-links a:hover {
+  color: #000000;
+}
+
+footer .endereco {
+  font-size: 13px;
+  background-color: #701631;
+  padding: 20px 0;
+  border-bottom: 0px solid #ffffff;
+  line-height: 18px;
+}
+
+footer .endereco strong {
+  font-size: 16px;
+}
+
+footer .endereco ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+footer .endereco li {
+  list-style: none;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+footer .endereco li .fa {
+  margin-right: 4px !important;
+}
+
+
+
+footer .endereco a,
+footer .mapa-site a {
+  color: #ffffff;
+}
+
+footer .mapa-site {
+  background-image: url(../images/bg_footer_evento.jpg);
+  background-position: 50% 0;
+  background-size: cover;
+  /*min-height: 340px;*/
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+footer .mapa-site ul {
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+}
+
+footer .mapa-site ul li {
+  padding: 6px 0;
+  line-height: 14px;
+}
+
+footer .mapa-site ul .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+footer .mapa-site ul a:hover {
+  text-decoration: underline;
+}
+
+footer .mapa-site .list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+footer .mapa-site .separador {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-bottom: 1px dashed #ffffff;
+}
+
+footer .mapa-site .social-media {
+  font-size: 24px;
+}
+
+footer .mapa-site .social-media li {
+  padding: 0 6px 0 0;
+}
+
+
+
+footer .mapa-site .social-media li:last-child {
+  padding: 0;
+}
+
+footer .mapa-site .social-media li a {
+  width: 35px;
+  height: 35px;
+  padding: 5px 5px 5px 4px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 100%;
+}
+
+footer .mapa-site .social-media li a.facebook {
+  padding-right: 5px;
+}
+
+footer .mapa-site .social-media li a.twitter {
+  padding-right: 1px;
+}
+
+footer .mapa-site .social-media li a.youtube {
+  padding-right: 3px;
+}
+
+footer .mapa-site .social-media li a.linkedin {
+  padding-left: 8px;
+}
+
+footer .mapa-site .social-media li a.instagram {
+  padding-left: 5px;
+}
+
+footer .mapa-site .social-media li a.facebook:hover {
+  color: #3c599f;
+}
+
+footer .mapa-site .social-media li a.twitter:hover {
+  color: #5ea9dd;
+}
+
+footer .mapa-site .social-media li a.youtube:hover {
+  color: #e12b28;
+}
+
+footer .mapa-site .social-media li a.linkedin:hover {
+  color: #0177b5;
+}
+
+footer .mapa-site .social-media li a.instagram:hover {
+  color: #ff4081;
+}
+
+footer .mapa-site .social-media li a:hover {
+  text-decoration: none;
+  background-color: #fff;
+}
+
+footer .copyrights {
+  font-size: 12px;
+  background-color: #b4224f;
+  text-align: center;
+  padding: 10px 0;
+}
 
 
 
@@ -348,6 +554,14 @@ table th {
   }
   #portal-educa .carousel-item .img-carousel {
     min-height: 320px; 
+  }
+
+  footer .endereco ul {
+    margin-top: 8px;
+  }
+
+  footer .endereco li .fa {
+    margin-right: 8px !important;
   }
   
 }
