@@ -166,7 +166,10 @@ section {
   text-transform: uppercase; 
   border-radius: 20px;
   background: #efefef;
-  transition: all 0.15s ease ;
+  -webkit-transition: all 0.15s ease; 
+       -moz-transition: all 0.15s ease; 
+         -o-transition: all 0.15s ease; 
+            transition: all 0.15s ease;
 }
 
 .box a { color: inherit;text-decoration: none !important }
@@ -178,7 +181,10 @@ section {
   -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
-  transition: all 0.15s ease ;
+   -webkit-transition: all 0.15s ease; 
+       -moz-transition: all 0.15s ease; 
+         -o-transition: all 0.15s ease; 
+            transition: all 0.15s ease;
 }
 
 .box .svg {
@@ -208,19 +214,28 @@ section {
 .taksbar #open-new-tab .alt,
 .taksbar .pin .alt{
   display: none;
-  transition: all 0.15s ease ;
+   -webkit-transition: all 0.15s ease; 
+       -moz-transition: all 0.15s ease; 
+         -o-transition: all 0.15s ease; 
+            transition: all 0.15s ease;
   cursor: pointer;
 }
 
 .taksbar #open-new-tab:hover .alt,
 .taksbar .pin:hover .alt {
   display: inline-block;
-  transition: all 0.15s ease ;
+   -webkit-transition: all 0.15s ease; 
+       -moz-transition: all 0.15s ease; 
+         -o-transition: all 0.15s ease; 
+            transition: all 0.15s ease;
 }
 
 .taksbar .pin i.fa{
   transform: rotate(90deg);
-  transition: transform 0.1s ease ; 
+   -webkit-transition: all 0.15s ease; 
+       -moz-transition: all 0.15s ease; 
+         -o-transition: all 0.15s ease; 
+            transition: all 0.15s ease;
 }
 
 .taksbar .pin i.fa:hover {
@@ -268,7 +283,8 @@ section {
 }
 
 #portal-educa .carousel-item .img-carousel {
-  min-height: 200px; 
+  /*min-height: 200px; */ /*versao com lateral*/
+  min-height: 230px; 
   background-size: cover !important; 
   background-position: center !important;
 }
@@ -285,6 +301,8 @@ section {
 
   border: 1px solid #ccc;
 }
+
+
 
 
 /*AVISOS*/
@@ -553,7 +571,8 @@ footer .copyrights {
     padding-left: .25rem;
   }
   #portal-educa .carousel-item .img-carousel {
-    min-height: 320px; 
+    /*min-height: 320px; versao com lateral*/
+    min-height: 350px; 
   }
 
   footer .endereco ul {
@@ -587,7 +606,8 @@ footer .copyrights {
 }
 
 #portal-educa .carousel-item .img-carousel {
-  min-height: 330px; 
+  /*min-height: 330px; versao com lateral*/
+  min-height: 500px; 
 }
 
 }
@@ -596,6 +616,7 @@ footer .copyrights {
 
 @media (min-width: 1200px){
   #portal-educa .carousel-item .img-carousel {
-    min-height: 390px; 
+    /*min-height: 390px; versao com lateral*/
+    min-height: 590px; 
   }
 }
